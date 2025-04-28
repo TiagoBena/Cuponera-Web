@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuponera Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Nuestra Cuponera</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cupones">Cupones</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>¿Qué es esta página?</h2>
+        <p>Somos una plataforma de cupones donde podés encontrar descuentos increíbles en tus marcas favoritas.</p>
+    </section>
+
+    <section id="cupones">
+        <h2>Catálogo de Cupones</h2>
+        <button onclick="mostrarFormulario()">Agregar Cupón</button>
+
+        <!-- Formulario oculto para agregar nuevos cupones -->
+        <div id="formulario-cupon" style="display:none;">
+            <h3>Nuevo Cupón</h3>
+            <input type="text" id="titulo" placeholder="Título del cupón">
+            <input type="text" id="descripcion" placeholder="Descripción">
+            <input type="text" id="imagen" placeholder="URL de la imagen">
+            <input type="date" id="fecha" placeholder="Fecha de vencimiento">
+            <button onclick="agregarCupon()">Guardar Cupón</button>
+            <button onclick="ocultarFormulario()">Cancelar</button>
+        </div>
+
+        <!-- Aquí se mostrarán los cupones -->
+        <div id="lista-cupones"></div>
+    </section>
+
+    <section id="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos un grupo apasionado por brindar las mejores oportunidades de ahorro a todos los usuarios. ¡Gracias por confiar en nosotros!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Cuponera Web - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
