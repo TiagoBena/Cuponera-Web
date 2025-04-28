@@ -2,58 +2,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuponera Web</title>
-  <link rel="icon" href="img/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuponera.Pina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+    <header>
+        <img src="img/logo.png" alt="Cuponera.Pina Logo" class="logo">
+        <nav>
+            <button onclick="mostrarInicio()">Inicio</button>
+            <button onclick="mostrarCupones()">Cupones</button>
+            <button onclick="mostrarNosotros()">¿Quiénes somos?</button>
+        </nav>
+    </header>
 
-<header class="hero">
-  <div class="hero-content">
-    <img src="img/logo.png" alt="Cuponera Web" class="logo">
-    <h1>Cuponera Web</h1>
-    <p>Tu lugar de descuentos elegantes</p>
-  </div>
-</header>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a Cuponera.Pina</h1>
+            <p>¡Accedé a los mejores descuentos en un solo lugar!</p>
+        </section>
 
-<nav class="navbar">
-  <button onclick="mostrarInicio()">Inicio</button>
-  <button onclick="mostrarCupones()">Catálogo de Cupones</button>
-  <button onclick="mostrarNosotros()">¿Quiénes Somos?</button>
-</nav>
+        <section id="cupones" class="hidden">
+            <h2>Crear un nuevo cupón</h2>
+            <input type="text" id="titulo" placeholder="Título del cupón" required>
+            <input type="text" id="descripcion" placeholder="Descripción" required>
+            <input type="date" id="vencimiento" required>
+            <input type="text" id="imagen" placeholder="URL de imagen (opcional)">
+            <button onclick="agregarCupon()">Agregar Cupón</button>
 
-<main id="contenido">
-  <section id="inicio">
-    <h2>Bienvenido a Cuponera Web</h2>
-    <p>Encuentra los mejores descuentos seleccionados para vos. Calidad, estilo y ahorro en un solo lugar.</p>
-  </section>
+            <div id="listaCupones"></div>
+        </section>
 
-  <section id="cupones" class="hidden">
-    <h2>Catálogo de Cupones</h2>
-    <div id="formulario-cupon">
-      <input type="text" id="titulo" placeholder="Título">
-      <input type="text" id="descripcion" placeholder="Descripción">
-      <input type="date" id="vencimiento">
-      <input type="text" id="imagen" placeholder="URL de imagen (opcional)">
-      <button onclick="agregarCupon()">Agregar Cupón</button>
-    </div>
-    <div id="lista-cupones" class="cupones-grid"></div>
-  </section>
+        <section id="nosotros" class="hidden">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos Cuponera.Pina, un grupo de entusiastas que busca acercarte los mejores descuentos y promociones de manera simple, rápida y moderna.</p>
+        </section>
+    </main>
 
-  <section id="nosotros" class="hidden">
-    <h2>¿Quiénes Somos?</h2>
-    <p>Somos un grupo de jóvenes emprendedores apasionados por el ahorro inteligente y el diseño web. Creemos en acercar las mejores oportunidades de forma simple, elegante y eficiente para todos.</p>
-  </section>
-</main>
+    <footer>
+        <p>© 2025 Cuponera.Pina - Todos los derechos reservados.</p>
+    </footer>
 
-<footer>
-  <p>&copy; 2025 Cuponera Web - Todos los derechos reservados</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
