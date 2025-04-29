@@ -1,33 +1,35 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('../img/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 header {
-  background: rgba(255,255,255,0.8);
-  padding: 1rem;
-  text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
-button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
+main {
+    padding: 20px;
 }
-.card {
-  background: rgba(255,255,255,0.9);
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 10px;
+.cupones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.cupon {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.cupon img {
+    max-width: 100%;
+    height: auto;
 }
