@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuponera.Pina</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuponera.Pina</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+  <header>
     <img src="img/logo.png" alt="Logo Cuponera.Pina" class="logo">
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="quienes.html">¿Quiénes Somos?</a>
-        <a href="login.html">Login</a>
-        <a href="profile.html">Mi Perfil</a>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cupones">Cupones</a></li>
+        <li><a href="#perfil">Mi Perfil</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+      </ul>
     </nav>
-</header>
-<main>
+  </header>
+
+  <section id="inicio">
     <h1>Bienvenido a Cuponera.Pina</h1>
-    <div id="cupones" class="cupones-grid">
-        <!-- Los cupones se cargan dinámicamente aquí -->
+    <p>Tu sitio de cupones elegantes y exclusivos.</p>
+  </section>
+
+  <section id="cupones">
+    <h2>Catálogo de Cupones</h2>
+    <div class="cupones-container">
+      <div class="cupon">
+        <img src="img/sample-coupon.jpg" alt="Cupón Ejemplo">
+        <h3>Descuento del 20%</h3>
+        <p>En tiendas seleccionadas.</p>
+        <code>PINADESCUENTO</code>
+      </div>
     </div>
-</main>
-<script src="js/script.js"></script>
+  </section>
+
+  <section id="perfil">
+    <h2>Mi Perfil</h2>
+    <p>Aquí verás tus cupones canjeados y disponibles.</p>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Usuario">
+      <input type="password" placeholder="Contraseña">
+      <button type="submit">Ingresar</button>
+    </form>
+  </section>
+
+  <section id="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos el equipo creador de Cuponera.Pina, apasionados por brindar beneficios exclusivos a nuestra comunidad.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cuponera.Pina</p>
+  </footer>
 </body>
 </html>
