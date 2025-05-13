@@ -1,0 +1,1 @@
+Contenido de muestra para script.js
