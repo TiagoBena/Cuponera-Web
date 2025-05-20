@@ -1,1 +1,0 @@
-// Coupons management script
