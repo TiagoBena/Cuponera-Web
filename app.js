@@ -1,2 +1,2 @@
 
-document.getElementById("app").innerHTML = "<h1>Bienvenido a Cuponera Pina</h1><p>Inicia sesión o regístrate para comenzar.</p>";
+document.getElementById('app').innerHTML = '<p>Inicio de aplicación Cuponera Pina. Funcionalidad vendrá aquí.</p>';
